@@ -1,6 +1,6 @@
 # 🤖 cipher-telegram-trader
 
-**Telegram to MT5 trading bot** — copies signals from Telegram channels using Cipher Gateway SDK.
+**Telegram to MT5 trading bot** — copies signals from Telegram channels using Tonpo SDK.
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -13,7 +13,7 @@
 | 🔄 **Auto-copy signals** | Listens to any Telegram channel or group |
 | 📊 **Risk management** | Position sizing based on balance, risk %, and SL distance |
 | 👥 **Multi-user support** | Each user connects their own MT5 account |
-| ⚡ **Fast execution** | Under 2 seconds via Cipher Gateway |
+| ⚡ **Fast execution** | Under 2 seconds via Tonpo Gateway |
 | 📈 **Manual trading** | `/trade BUY EURUSD 0.1` |
 | 💰 **Balance & positions** | Check account status anytime |
 
@@ -23,13 +23,10 @@
 Telegram Channel/Group
 │
 ▼ (signal)
-Your Telegram Bot (CipherTrader)
+Your Telegram Bot
 │
 ▼ (REST/WebSocket)
-Cipher Gateway (gateway.cipherbridge.cloud)
-│
-▼ (WebSocket)
-CipherBridge (CMB) + MT5 Terminal
+Tonpo Gateway (gateway.tonpo.cloud)
 │
 ▼
 Your Broker Account
@@ -138,7 +135,7 @@ cipher-telegram-trader/
 ### 📦 Dependencies
 
 - python-telegram-bot==22.6
-- cipher-gateway==1.0.0
+- tonpo==1.0.6
 - python-dotenv==1.0.1
 
 
